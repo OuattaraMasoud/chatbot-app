@@ -10,8 +10,10 @@ app.use(express.json());
 
 const configuration = new Configuration({
   
-  apiKey: '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',
+ apiKey: "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" //Clé api secrete a inserer ici
+ 
 });
+
 const openai = new OpenAIApi(configuration);
 
 app.post("/chat", async (req, res) => {
